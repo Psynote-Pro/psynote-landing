@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
-  "url": "https://github.com/ManuRozas/psynote-landing/releases/download/v1.0.3/Psynote-Instalador-1.0.3.exe",
-  "notas": "Relay en producción, correcciones de seguridad, banner"
+  "version": "1.0.4",
+  "url": "https://github.com/ManuRozas/psynote-landing/releases/download/v1.0.4/Psynote-Instalador.exe",
+  "notas": "Los documentos generados ahora se guardan en Documentos\\Documentos clínicos."
 }
