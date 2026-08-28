@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Psynote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#111110;--surface:#1A1917;--surface2:#222120;
+    --border:#2E2C2A;--border2:#3A3835;
+    --text:#F2EFE9;--muted:#9A958D;--muted2:#5A5650;
+    --accent:#4A6CF7;--accent-dim:#3454D1;--accent-light:#1A2240;--accent-text:#8BA3FF;
+    --red:#C0213A;--red-light:#2A0A10;--red-text:#F07080;
+    --serif:'DM Serif Display',serif;
+    --sans:'Plus Jakarta Sans',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;font-weight:300;}
+  a{color:var(--accent-text);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px;}
+
+  header.nav{border-bottom:1px solid var(--border);padding:20px 0;}
+  .nav-inner{max-width:760px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;}
+  .logo-text{font-family:var(--serif);font-size:18px;letter-spacing:-.02em;color:var(--text);}
+  .back-link{font-size:13px;color:var(--muted);}
+  .back-link:hover{color:var(--text);}
+
+  main{padding:60px 0 90px;}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--accent-text);text-transform:uppercase;display:inline-block;background:var(--accent-light);border:1px solid rgba(74,108,247,.25);padding:5px 12px;border-radius:20px;margin-bottom:20px;}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin-bottom:10px;}
+  .updated{font-size:13px;color:var(--muted2);margin-bottom:48px;}
+  h2{font-family:var(--serif);font-weight:400;font-size:1.35rem;color:var(--text);margin:44px 0 14px;}
+  h3{font-family:var(--sans);font-weight:600;font-size:0.95rem;color:var(--text);margin:24px 0 8px;}
+  p, li{font-size:15px;color:var(--muted);margin-bottom:14px;}
+  strong{color:var(--text);font-weight:500;}
+  ul, ol{padding-left:20px;margin-bottom:14px;}
+  li{margin-bottom:8px;}
+  table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:14px;}
+  th{text-align:left;color:var(--text);font-weight:500;padding:8px 12px 8px 0;border-bottom:1px solid var(--border2);}
+  td{color:var(--muted);padding:10px 12px 10px 0;border-bottom:1px solid var(--border);vertical-align:top;}
+  .note{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:6px;padding:16px 18px;font-size:13.5px;color:var(--muted);margin:20px 0;}
+
+  footer{border-top:1px solid var(--border);padding:28px 0;font-size:12.5px;color:var(--muted2);}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="logo-text">Psynote</span>
+    <a href="index.html" class="back-link">← Volver al sitio</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="eyebrow">Legal</div>
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Última actualización: [completar fecha de publicación]</p>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Psynote es un servicio operado por el equipo de Psynote. Para cualquier consulta sobre esta política o sobre tus datos, podés escribir a <a href="mailto:contacto@psynote.pro">contacto@psynote.pro</a>.</p>
+
+  <h2>2. Principio general</h2>
+  <p>Psynote está diseñado para minimizar los datos que salen de tu computadora. <strong>El audio de tus sesiones nunca se envía a ningún servidor</strong>: se transcribe y se anonimiza localmente, en tu propio dispositivo. Esta política describe qué otros datos manejamos — los de facturación, los de uso de la licencia y los del formulario de contacto — y con qué fin.</p>
+
+  <h2>3. Qué datos recolectamos</h2>
+
+  <h3>a) Al comprar una licencia</h3>
+  <p>El pago se procesa a través de <strong>LemonSqueezy</strong>, que actúa como "merchant of record": es decir, técnicamente la compra se hace a través de ellos, no directamente con Psynote. LemonSqueezy recolecta tu email, datos de facturación y de pago según su propia política de privacidad. Psynote recibe de ellos únicamente tu email y un identificador de cliente, para poder asociar tu licencia a tu compra y darte soporte.</p>
+
+  <h3>b) Al usar la aplicación</h3>
+  <p>Para que la licencia funcione y para aplicar los límites de uso de cada plan, el servidor de Psynote (el "relay") guarda:</p>
+  <ul>
+    <li>Tu clave de licencia y el email asociado a la compra.</li>
+    <li>Un identificador del dispositivo en el que activaste la licencia (para evitar el uso simultáneo en varios equipos).</li>
+    <li>La cantidad de documentos generados por período, para calcular tu uso disponible.</li>
+  </ul>
+  <p>Ninguno de estos registros incluye el contenido de tus sesiones, el texto transcripto ni los documentos generados — eso nunca se guarda en el servidor.</p>
+
+  <h3>c) Al generar un documento</h3>
+  <p>El audio se procesa enteramente en tu computadora: se transcribe y se anonimiza ahí mismo, sin salir del equipo. Una vez anonimizado — nombres, lugares y otros datos identificables reemplazados por etiquetas neutras — ese texto se envía a un motor de inteligencia artificial externo únicamente para redactar el documento final. Ese texto no queda almacenado ni en el servidor de Psynote ni, según la política del proveedor de IA utilizado, se usa para entrenar modelos.</p>
+
+  <h3>d) Al escribirnos por el formulario de contacto</h3>
+  <p>El formulario de contacto del sitio funciona a través de <strong>Formspree</strong>. Los datos que completes ahí (nombre, email, mensaje) se procesan según la política de privacidad de Formspree y se nos reenvían para poder responderte.</p>
+
+  <h2>4. Con quién compartimos datos</h2>
+  <table>
+    <tr><th>Servicio</th><th>Qué dato recibe</th><th>Para qué</th></tr>
+    <tr><td>LemonSqueezy</td><td>Email, datos de pago y facturación</td><td>Procesar la compra y la suscripción</td></tr>
+    <tr><td>Motor de IA</td><td>Texto de sesión ya anonimizado</td><td>Redactar el documento clínico</td></tr>
+    <tr><td>Formspree</td><td>Nombre, email, mensaje del formulario</td><td>Gestionar consultas de contacto</td></tr>
+  </table>
+  <p>No vendemos ni cedemos datos a terceros con fines publicitarios. El sitio no usa cookies de analítica ni de seguimiento.</p>
+
+  <h2>5. Cuánto tiempo conservamos los datos</h2>
+  <ul>
+    <li><strong>Audio de las sesiones:</strong> nunca sale de tu computadora. Se borra automáticamente al generar el documento con éxito. Si el procesamiento falla, queda temporalmente en tu equipo hasta que reintentes.</li>
+    <li><strong>Texto transcripto y anonimizado:</strong> vive solo en memoria durante el procesamiento; no se escribe a disco ni se almacena en ningún servidor.</li>
+    <li><strong>Datos de licencia y uso</strong> (email, dispositivo, contador de documentos): se conservan mientras la licencia esté activa, para facturación y soporte.</li>
+    <li><strong>Mensajes de contacto:</strong> según la política de retención de Formspree.</li>
+  </ul>
+
+  <h2>6. Tus derechos</h2>
+  <p>Podés solicitarnos en cualquier momento acceder a los datos que tenemos asociados a tu licencia, corregirlos, o pedir que los eliminemos (dando de baja la licencia). Para ejercer cualquiera de estos derechos, escribinos a <a href="mailto:contacto@psynote.pro">contacto@psynote.pro</a>.</p>
+
+  <h2>7. Seguridad</h2>
+  <p>Tomamos medidas razonables para proteger los datos que manejamos (conexiones cifradas, acceso restringido a la infraestructura del servidor). Ningún sistema es 100% infalible, pero el diseño de Psynote — procesar el audio y el contenido clínico localmente — reduce al mínimo lo que podría verse comprometido si algo fallara del lado del servidor.</p>
+
+  <h2>8. Cambios a esta política</h2>
+  <p>Podemos actualizar esta política ocasionalmente. Los cambios relevantes se van a comunicar a través del sitio o de la aplicación.</p>
+
+  <h2>9. Contacto</h2>
+  <p>Ante cualquier duda sobre esta política o sobre tus datos, escribinos a <a href="mailto:contacto@psynote.pro">contacto@psynote.pro</a>.</p>
+
+  <div class="note">
+    Borrador para revisión. Recomiendo que un abogado local lo revise antes de publicarlo, en particular para confirmar qué normativa de protección de datos aplica según los países donde vendés (por ejemplo, Ley 25.326 en Argentina u otras leyes locales de tus clientes) y si hace falta un lenguaje más específico sobre transferencias internacionales de datos. No soy abogado y esto no reemplaza asesoramiento legal.
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© Psynote — Todos los derechos reservados.</div>
+</footer>
+
+</body>
+</html>
