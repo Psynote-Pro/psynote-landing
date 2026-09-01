@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Bienvenido/a a Psynote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#111110;--surface:#1A1917;--surface2:#222120;
+    --border:#2E2C2A;--border2:#3A3835;
+    --text:#F2EFE9;--muted:#9A958D;--muted2:#5A5650;
+    --accent:#4A6CF7;--accent-dim:#3454D1;--accent-light:#1A2240;--accent-text:#8BA3FF;
+    --red:#C0213A;--red-light:#2A0A10;--red-text:#F07080;
+    --green:#2A7A4A;--green-light:#0A1F12;--green-text:#6FD79A;
+    --serif:'DM Serif Display',serif;
+    --sans:'Plus Jakarta Sans',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;font-weight:300;}
+  a{color:inherit;text-decoration:none;}
+  ::selection{background:var(--accent-dim);color:white;}
+  .wrap{max-width:600px;margin:0 auto;padding:0 24px;}
+
+  header{padding:36px 0 0;text-align:center;}
+  .logo{display:inline-flex;align-items:center;gap:10px;}
+  .logo-waves{display:flex;align-items:center;gap:3px;height:24px;}
+  .logo-waves span{display:block;width:3px;border-radius:2px;background:var(--accent);}
+  .logo-waves span:nth-child(1){height:9px;opacity:.4;}
+  .logo-waves span:nth-child(2){height:16px;opacity:.65;}
+  .logo-waves span:nth-child(3){height:24px;position:relative;}
+  .logo-waves span:nth-child(3)::after{content:'';position:absolute;width:6px;height:6px;background:var(--red);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);}
+  .logo-waves span:nth-child(4){height:16px;opacity:.65;}
+  .logo-waves span:nth-child(5){height:9px;opacity:.4;}
+  .logo-text{font-family:var(--serif);font-size:18px;letter-spacing:-.02em;}
+
+  main{padding:56px 0 90px;}
+
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--accent-text);text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);border:1px solid rgba(74,108,247,.25);padding:5px 12px;border-radius:20px;margin-bottom:22px;}
+  .eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--red);}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,5vw,2.5rem);line-height:1.15;letter-spacing:-.01em;}
+  .sub{margin-top:14px;font-size:15.5px;color:var(--muted);}
+
+  section{margin-top:44px;}
+  .section-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2);margin-bottom:12px;}
+
+  /* LICENCIA */
+  .license-box{border:1px solid var(--border2);border-radius:12px;padding:20px 22px;background:var(--surface);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .license-key{font-family:var(--mono);font-size:15px;color:var(--text);letter-spacing:.02em;word-break:break-all;}
+  .license-copy{flex-shrink:0;font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:7px;border:1px solid var(--border2);background:none;color:var(--text);cursor:pointer;font-family:var(--sans);}
+  .license-copy:hover{border-color:var(--muted);}
+  .license-copy.copied{border-color:var(--green);color:var(--green-text);}
+  .license-missing{font-size:13.5px;color:var(--muted);line-height:1.6;}
+
+  /* AVISO SMARTSCREEN */
+  .smartscreen-block{border:1px solid rgba(74,108,247,.3);border-radius:14px;padding:26px;background:var(--accent-light);}
+  .smartscreen-block h2{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin-bottom:10px;}
+  .smartscreen-block p{font-size:14px;color:var(--text);opacity:.9;line-height:1.65;margin-bottom:16px;}
+  .smartscreen-shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;}
+  @media(max-width:520px){.smartscreen-shots{grid-template-columns:1fr;}}
+  .smartscreen-shots figure{margin:0;}
+  .smartscreen-shots img{width:100%;display:block;border-radius:8px;border:1px solid var(--border2);}
+  .smartscreen-shots figcaption{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:7px;line-height:1.5;}
+  .smartscreen-steps{font-size:13.5px;color:var(--text);opacity:.9;line-height:1.8;padding-left:18px;}
+
+  /* NOTE BOX (tiempos) */
+  .note-box{font-size:13.5px;color:var(--text);border-radius:10px;padding:16px 18px;line-height:1.65;background:var(--surface);border:1px solid var(--border2);}
+  .note-box strong{color:var(--text);}
+
+  /* DESCARGA */
+  .download-cta{text-align:center;margin-top:48px;}
+  .btn-primary{background:var(--accent);color:white;font-weight:600;font-size:15px;padding:15px 30px;border-radius:9px;display:inline-flex;align-items:center;gap:8px;transition:background .15s,transform .15s;border:none;cursor:pointer;font-family:var(--sans);}
+  .btn-primary:hover{background:var(--accent-dim);transform:translateY(-1px);}
+  .guide-link{display:block;margin-top:18px;font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--border2);padding-bottom:2px;display:inline-block;}
+  .guide-link:hover{color:var(--text);border-color:var(--muted);}
+
+  footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;font-size:12px;color:var(--muted2);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-waves"><span></span><span></span><span></span><span></span><span></span></div>
+    <span class="logo-text">Psynote</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <span class="eyebrow"><span class="dot"></span> Compra confirmada</span>
+  <h1>Bienvenido/a a Psynote.</h1>
+  <p class="sub">Antes de instalar, dos minutos de lectura te van a ahorrar una sorpresa innecesaria.</p>
+
+  <section id="licencia">
+    <div class="section-label">Tu clave de licencia</div>
+    <div class="license-box">
+      <span class="license-key" id="license-key">—</span>
+      <button class="license-copy" id="license-copy-btn" onclick="copiarLicencia()">Copiar</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Antes de instalar</div>
+    <div class="smartscreen-block">
+      <h2>Windows va a mostrar un aviso azul</h2>
+      <p>Es normal y esperable — pasa con cualquier instalador que no paga una firma digital comercial, no significa que algo esté mal. Así se ve, tal cual, con el instalador de Psynote:</p>
+      <div class="smartscreen-shots">
+        <figure>
+          <img src="smartscreen-aviso-1.png" alt="Aviso de Windows: &quot;Windows protegió su PC&quot;, SmartScreen impidió el inicio de una aplicación desconocida">
+          <figcaption>Lo primero que vas a ver.</figcaption>
+        </figure>
+        <figure>
+          <img src="smartscreen-aviso-2.png" alt="Mismo aviso expandido, mostrando el nombre Psynote-Instalador.exe y el botón Ejecutar de todas formas">
+          <figcaption>Al hacer clic en "Más información".</figcaption>
+        </figure>
+      </div>
+      <ol class="smartscreen-steps">
+        <li>Hacer clic en <strong>Más información</strong>.</li>
+        <li>Aparece el botón <strong>Ejecutar de todas formas</strong> — hacer clic ahí para continuar.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="note-box">La primera instalación tarda entre <strong>10 y 40 minutos</strong>, porque descarga los modelos de transcripción. Es normal que los ventiladores de tu computadora suenen durante ese rato: es la señal de que el procesamiento ocurre ahí mismo, en tu máquina, y nunca sale de ella.</div>
+  </section>
+
+  <div class="download-cta">
+    <a href="https://github.com/ManuRozas/psynote-landing/releases/latest/download/Psynote-Instalador.exe" class="btn-primary">Descargar instalador →</a>
+    <a href="https://psynote.pro/psynote-guia-instalacion.pdf" target="_blank" class="guide-link">Ver guía completa paso a paso</a>
+  </div>
+
+</main>
+
+<footer>© 2026 Psynote.</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const licencia = params.get('key');
+  const keyEl = document.getElementById('license-key');
+  const copyBtn = document.getElementById('license-copy-btn');
+
+  if (licencia) {
+    keyEl.textContent = licencia;
+  } else {
+    keyEl.parentElement.outerHTML = '<div class="license-missing">Tu clave de licencia te llegó por mail, en el recibo de la compra. Si no aparece, escribir a soporte desde la página de contacto.</div>';
+  }
+
+  function copiarLicencia() {
+    if (!licencia) return;
+    navigator.clipboard.writeText(licencia).then(() => {
+      copyBtn.textContent = 'Copiado';
+      copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.textContent = 'Copiar'; copyBtn.classList.remove('copied'); }, 2000);
+    });
+  }
+</script>
+
+</body>
+</html>
